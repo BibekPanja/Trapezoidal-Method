@@ -6,11 +6,11 @@
 int main(){
 	float a,b,h,p,sum=0,t;
 	int i,n;
-	printf("Enter the lower limit:");
+	printf("Enter the lower limit(a):");
 	scanf("%f",&a);
-	printf("Enter the upper limit:");
+	printf("Enter the upper limit(b):");
 	scanf("%f",&b);
-	printf("Enter the no of interval:");
+	printf("Enter the no of interval(n):");
 	scanf("%d",&n);
 	h=(b-a)/n;
 
