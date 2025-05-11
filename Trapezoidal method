@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+#define f(x) (1/sqrt(1+x*x*x))
+
+int main(){
+	float a,b,h,p,sum=0,t;
+	int i,n;
+	printf("Enter the lower limit:");
+	scanf("%f",&a);
+	printf("Enter the upper limit:");
+	scanf("%f",&b);
+	printf("Enter the no of interval:");
+	scanf("%d",&n);
+	h=(b-a)/n;
+
+	for(i=1;i<n;i++){
+		p=a+(i*h);
+		sum=sum+f(p);
+	}
+	t=(h/2)*(f(a)+f(b)+2*sum);
+	printf("The value of integral=%f",t);
+	return 0;
+}
